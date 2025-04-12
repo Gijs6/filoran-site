@@ -1,0 +1,17 @@
+title: Filoran
+email: 4881@schravenlant.nl
+description: A website for our fictive country Filoran
+baseurl: ""
+url: "https://filoran.gijs6.nl"
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
