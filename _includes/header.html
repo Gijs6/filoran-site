@@ -1,0 +1,17 @@
+<header>
+    <div>
+        <img src="{{ '/assets/images/logo1.png' | relative_url }}" id="header-logo">
+        <span id="logo-subtext">Informatie en diensten van de overheid</span>
+    </div>
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        {% assign nav_pages = site.pages | reject: "nav", false | sort: "title" %}
+        {% for page in nav_pages %}
+        {% unless page.url == "/" %}
+        <a href="{{ page.url | relative_url }}">
+            {{ page.title }}
+        </a>
+        {% endunless %}
+        {% endfor %}
+    </nav>
+</header>
