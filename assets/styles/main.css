@@ -28,6 +28,8 @@ header {
 
 header img {
   height: 3em;
+  width: fit-content;
+  object-fit: contain;
 }
 
 header div {
