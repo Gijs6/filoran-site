@@ -112,3 +112,57 @@ footer {
   text-decoration: underline;
   color: white;
 }
+
+
+
+table {
+    border-collapse: collapse;
+    border: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+th {
+    background-color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: white;
+}
+
+tr:nth-child(odd) td {
+    background-color: #eaeaea;
+}
+
+tr:first-child td {
+    border-top: none; /* Only for tables with no headers */
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+tr:first-child th {
+    border-top: none;
+}
+
+th:first-child {
+    border-left: none;
+}
+
+th:last-child {
+    border-right: none;
+}

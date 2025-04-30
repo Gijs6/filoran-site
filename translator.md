@@ -12,26 +12,41 @@ title: Translator
   resize: none;
   height: 40vh;
 }
-main {
+main section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 10px;
-}
-main > * {
   margin: 0;
 }
 </style>
 
-## Inputtekst
+# Vertalen naar het Filorano
 
-## Letterlijke outputtekst
+|     | /a/ | /i/ | /e/ | /o/ |
+| --- | --- | --- | --- | --- |
+| /p/ |  d  |  π  |  p  |  q  |
+| /t/ |  θ  |  ζ  |  t  |  τ  |
+| /k/ |  c  |  ψ  |  k  |  μ  |
+| /n/ |  ξ  |  ε  |  n  |  u  |
+| /l/ |  λ  |  δ  |  l  |  ω  |
+| /s/ |  z  |  σ  |  s  |  и  |
+| /j/ |  y  |  x  |  j  |  л  |
+| /f/ |  g  |  φ  |  f  |  ч  |
+| /r/ |  ж  |  я  |  r  |  ю  |
+| /m/ |  д  |  h  |  m  |  ъ  |
 
-## Verbeterde outputtekst
+<section>
+
+<h2>Inputtekst</h2>
+<h2>Letterlijke outputtekst</h2>
+<h2>Verbeterde outputtekst</h2>
 
 <textarea id="input"></textarea>
 <div id="output1"></div>
 <div id="output2"></div>
+
+</section>
 
 <script>
 const chars = {
