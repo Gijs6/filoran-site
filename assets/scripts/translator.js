@@ -81,7 +81,15 @@ input.addEventListener("input", () => {
 
   output1.innerText = result1;
 
-  const str2 = str1.replace(/v/g, 'f').replace(/d/g, 't').replace(/q/g, 'k').replace(/c/g, 's').replace(/y/g, 'j');
+  const replacements = {
+    'v': 'f',
+    'd': 't',
+    'q': 'k',
+    'c': 's',
+    'y': 'j',
+    'z': 's'
+  };
+  const str2 = str1.replace(/[vdqcyz]/g, match => replacements[match]);
   let result2 = "";
 
   for (let i = 0; i < str2.length; i++) {
